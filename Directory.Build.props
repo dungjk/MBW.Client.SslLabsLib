@@ -9,6 +9,12 @@
     <Authors>LordMike</Authors>
     <Company>MBWarez</Company>
     <Copyright>Michael Bisbjerg $([System.DateTime]::Now.ToString(yyyy))</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>LICENSE.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/LordMike/MBW.Client.SslLabsLib</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/LordMike/MBW.Client.SslLabsLib</RepositoryUrl>
+    <RootNamespace>MBW.Client.SslLabsLib</RootNamespace>
   </PropertyGroup>
 
   <!-- Release stuff -->
