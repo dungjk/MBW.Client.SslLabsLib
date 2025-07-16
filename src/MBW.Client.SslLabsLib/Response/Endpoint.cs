@@ -9,42 +9,42 @@ public class Endpoint : SsllabsResponseBase
     /// <summary>
     /// Endpoint IP address, in IPv4 or IPv6 format.
     /// </summary>
-    public IPAddress IpAddress { get; set; }
+    public IPAddress IpAddress { get; set; } = null!;
 
     /// <summary>
     /// Server name retrieved via reverse DNS
     /// </summary>
-    public string ServerName { get; set; }
+    public string ServerName { get; set; } = null!;
 
     /// <summary>
     /// Assessment status message
     /// </summary>
-    public string StatusMessage { get; set; }
+    public string StatusMessage { get; set; } = null!;
 
     /// <summary>
     /// Code of the operation currently in progress
     /// </summary>
-    public string StatusDetails { get; set; }
+    public string StatusDetails { get; set; } = null!;
 
     /// <summary>
     /// Description of the operation currently in progress
     /// </summary>
-    public string StatusDetailsMessage { get; set; }
+    public string StatusDetailsMessage { get; set; } = null!;
 
     /// <summary>
     /// Possible values: A+, A-, A-F, T (no trust) and M (certificate name mismatch)
     /// </summary>
-    public string Grade { get; set; }
+    public string Grade { get; set; } = null!;
 
     /// <summary>
     /// Possible values: A+, A-, A-F and M (certificate name mismatch), if trust issues are ignored
     /// </summary>
-    public string GradeTrustIgnored { get; set; }
+    public string GradeTrustIgnored { get; set; } = null!;
 
     /// <summary>
     /// The next grade because of upcoming grading criteria changes, Null if there is no impact on current grade.
     /// </summary>
-    public string? FutureGrade  { get; set; }
+    public string? FutureGrade { get; set; }
 
     /// <summary>
     /// If this endpoint has warnings that might affect the score (e.g., get A- instead of A).
@@ -79,5 +79,5 @@ public class Endpoint : SsllabsResponseBase
     /// <summary>
     /// Details for an Endpoint. It's not present by default, but can be enabled by using the AnalyzeOptions.ReturnAll paramerer to the analyze API call.
     /// </summary>
-    public EndpointDetails Details { get; set; }
+    public EndpointDetails Details { get; set; } = null!;
 }

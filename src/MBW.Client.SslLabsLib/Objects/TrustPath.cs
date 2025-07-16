@@ -7,12 +7,12 @@ public class TrustPath
     /// <summary>
     /// List of certificate ID from leaf to root.
     /// </summary>
-    public List<string> CertIds { get; set; }
+    public List<string> CertIds { get; set; } = null!;
 
     /// <summary>
     /// This object shows info about the trusted certificate by using Mozilla trust store.
     /// </summary>
-    public List<Trust> Trust { get; set; }
+    public List<Trust> Trust { get; set; } = null!;
 
     /// <summary>
     /// True if a key is pinned, else false
@@ -22,7 +22,7 @@ public class TrustPath
     /// <summary>
     /// Number of matched pins with HPKP policy
     /// </summary>
-    public int MactchedPins { get; set; }
+    public int MatchedPins { get; set; }
     
     /// <summary>
     /// Number of unmatched pins with HPKP policy

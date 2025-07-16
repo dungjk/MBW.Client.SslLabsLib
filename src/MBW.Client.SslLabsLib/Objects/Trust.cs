@@ -5,7 +5,7 @@ public class Trust
     /// <summary>
     /// This field shows the Trust store being used (eg. "Mozilla")
     /// </summary>
-    public string RootStore { get; set; }
+    public string RootStore { get; set; } = null!;
 
     /// <summary>
     /// True if trusted against above rootStore

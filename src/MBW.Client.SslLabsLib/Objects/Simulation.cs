@@ -5,7 +5,7 @@ public class Simulation
     /// <summary>
     /// The client used
     /// </summary>
-    public SimClient Client { get; set; }
+    public SimClient Client { get; set; } = null!;
 
     /// <summary>
     /// Zero if handshake was successful, 1 if it was not.
@@ -25,7 +25,7 @@ public class Simulation
     /// <summary>
     /// Id of the certificate chain.
     /// </summary>
-    public string CertChainId { get; set; }
+    public string CertChainId { get; set; } = null!;
 
     /// <summary>
     /// Negotiated protocol ID.
@@ -40,12 +40,12 @@ public class Simulation
     /// <summary>
     /// Negotiated suite Name.
     /// </summary>
-    public string SuiteName { get; set; }
+    public string SuiteName { get; set; } = null!;
 
     /// <summary>
     /// Negotiated key exchange, for example "ECDH".
     /// </summary>
-    public string KxType { get; set; }
+    public string KxType { get; set; } = null!;
 
     /// <summary>
     /// Key exchange strength, in RSA-equivalent bits
@@ -83,14 +83,14 @@ public class Simulation
     public int? NamedGroupId { get; set; }
 
     /// <summary>
-    /// When ECDHE is negotiated, EC curve nanme (e.g., "secp256r1").
+    /// When ECDHE is negotiated, EC curve name (e.g., "secp256r1").
     /// </summary>
     public string? NamedGroupName { get; set; }
 
     /// <summary>
-    /// Connection certificate key algorithsm (e.g., "RSA").
+    /// Connection certificate key algorithm (e.g., "RSA").
     /// </summary>
-    public string KeyAlg { get; set; }
+    public string KeyAlg { get; set; } = null!;
 
     /// <summary>
     /// Connection certificate key size (e.g., 2048).
@@ -100,5 +100,5 @@ public class Simulation
     /// <summary>
     /// Connection certificate signature algorithm (e.g, "SHA256withRSA").
     /// </summary>
-    public string SigAlg { get; set; }
+    public string SigAlg { get; set; } = null!;
 }

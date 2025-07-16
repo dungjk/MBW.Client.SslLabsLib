@@ -7,10 +7,10 @@ public class CaaPolicy
     /// <summary>
     /// Hostname where policy is located
     /// </summary>
-    public string PolicyHostname { get; set; }
+    public string PolicyHostname { get; set; } = null!;
 
     /// <summary>
     /// List of Supported CAARecord
     /// </summary>
-    public List<CaaRecord> CaaRecords { get; set; }
+    public List<CaaRecord> CaaRecords { get; set; } = null!;
 }

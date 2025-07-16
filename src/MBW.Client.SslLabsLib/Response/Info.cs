@@ -8,12 +8,12 @@ public class Info : SsllabsResponseBase
     /// <summary>
     /// SSL Labs software version as a string (e.g., "1.11.14")
     /// </summary>
-    public string EngineVersion { get; set; }
+    public string EngineVersion { get; set; } = null!;
 
     /// <summary>
     /// Rating criteria version as a string (e.g., "2009f")
     /// </summary>
-    public string CriteriaVersion { get; set; }
+    public string CriteriaVersion { get; set; } = null!;
 
     /// <summary>
     /// The maximum number of concurrent assessments the client is allowed to initiate.
@@ -33,5 +33,5 @@ public class Info : SsllabsResponseBase
     /// <summary>
     /// A list of messages (strings). Messages can be public (sent to everyone) and private (sent only to the invoking client). Private messages are prefixed with "[Private]".
     /// </summary>
-    public List<string> Messages { get; set; }
+    public List<string> Messages { get; set; } = null!;
 }

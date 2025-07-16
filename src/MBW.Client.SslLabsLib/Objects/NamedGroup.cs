@@ -10,7 +10,7 @@ public class NamedGroup
     /// <summary>
     /// Named curve name 
     /// </summary>
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
 
     /// <summary>
     /// Named curve strength in EC bits

@@ -10,17 +10,17 @@ public class Protocol
     /// <summary>
     /// Protocol name, i.e. SSL or TLS.
     /// </summary>
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
 
     /// <summary>
     /// Protocol version, e.g. 1.2 (for TLS)
     /// </summary>
-    public string Version { get; set; }
+    public string Version { get; set; } = null!;
 
     /// <summary>
     /// Some servers have SSLv2 protocol enabled, but with all SSLv2 cipher suites disabled. In that case, this field is set to true.
     /// </summary>
-    public string V2SuitesDisabled { get; set; }
+    public string V2SuitesDisabled { get; set; } = null!;
 
     /// <summary>
     /// 0 if the protocol is insecure, null otherwise

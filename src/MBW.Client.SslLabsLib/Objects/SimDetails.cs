@@ -7,5 +7,5 @@ public class SimDetails
     /// <summary>
     /// Simulations
     /// </summary>
-    public List<Simulation> Results { get; set; }
+    public List<Simulation> Results { get; set; } = null!;
 }

@@ -7,7 +7,7 @@ public class DrownHosts
     /// <summary>
     /// Ip address of server that shares same RSA-Key/hostname in its certificate
     /// </summary>
-    public string Ip { get; set; }
+    public string Ip { get; set; } = null!;
 
     /// <summary>
     /// True if export cipher suites detected
@@ -27,7 +27,7 @@ public class DrownHosts
     /// <summary>
     /// True if SSL v2 is supported
     /// </summary>
-    public string Sslv2 { get; set; }
+    public string Sslv2 { get; set; } = null!;
 
     /// <summary>
     /// Drown host status:

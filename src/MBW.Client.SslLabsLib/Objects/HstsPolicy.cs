@@ -15,7 +15,7 @@ public class HstsPolicy
     /// <summary>
     /// The contents of the HSTS response header, if present
     /// </summary>
-    public string Header { get; set; }
+    public string Header { get; set; } = null!;
 
     /// <summary>
     /// HSTS Status
@@ -45,5 +45,5 @@ public class HstsPolicy
     /// <summary>
     /// List of raw policy directives
     /// </summary>
-    public Dictionary<string, string> Directives { get; set; }
+    public Dictionary<string, string> Directives { get; set; } = null!;
 }

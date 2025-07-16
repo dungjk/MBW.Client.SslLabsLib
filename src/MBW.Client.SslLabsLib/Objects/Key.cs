@@ -15,7 +15,7 @@ public class Key
     /// <summary>
     /// Key algorithm; possible values: RSA, DSA, and EC.
     /// </summary>
-    public string Alg { get; set; }
+    public string Alg { get; set; } = null!;
 
     /// <summary>
     /// True if we suspect that the key was generated using a weak random number generator (detected via a blacklist database)

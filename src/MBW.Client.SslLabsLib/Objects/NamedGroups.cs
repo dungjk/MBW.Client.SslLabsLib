@@ -4,7 +4,7 @@ namespace MBW.Client.SslLabsLib.Objects;
 
 public class NamedGroups
 {
-    public List<NamedGroup> List { get; set; }
+    public List<NamedGroup> List { get; set; } = null!;
 
     /// <summary>
     /// True if the server has preferred curves that it uses first

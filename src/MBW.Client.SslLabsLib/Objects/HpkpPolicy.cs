@@ -8,8 +8,8 @@ public class HpkpPolicy
     /// <summary>
     /// The contents of the HPKP response header, if present
     /// </summary>
-    public string Header { get; set; }
-    
+    public string Header { get; set; } = null!;
+
     /// <summary>
     /// HPKP Status
     /// </summary>
@@ -33,20 +33,20 @@ public class HpkpPolicy
     /// <summary>
     /// The report-uri value from the policy
     /// </summary>
-    public string ReportUri { get; set; }
+    public string ReportUri { get; set; } = null!;
 
     /// <summary>
     /// List of all pins used by the policy
     /// </summary>
-    public List<HpkpPin> Pins { get; set; }
+    public List<HpkpPin> Pins { get; set; } = null!;
 
     /// <summary>
     /// List of pins that match the current configuration
     /// </summary>
-    public List<HpkpPin> MatchedPins { get; set; }
+    public List<HpkpPin> MatchedPins { get; set; } = null!;
 
     /// <summary>
     /// List of raw policy directives
     /// </summary>
-    public List<List<string>> Directives { get; set; }
+    public List<List<string>> Directives { get; set; } = null!;
 }

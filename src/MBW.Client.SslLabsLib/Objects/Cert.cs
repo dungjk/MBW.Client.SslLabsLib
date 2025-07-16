@@ -9,27 +9,27 @@ public class Cert
     /// <summary>
     /// Certificate Id
     /// </summary>
-    public string Id { get; set; }
+    public string Id { get; set; } = null!;
 
     /// <summary>
     /// Certificate subject
     /// </summary>
-    public string Subject { get; set; }
+    public string Subject { get; set; } = null!;
 
     /// <summary>
     /// Certificate serial number (hex-encoded)
     /// </summary>
-    public string SerialNumber { get; set; }
+    public string SerialNumber { get; set; } = null!;
 
     /// <summary>
     /// Common names extracted from the subject
     /// </summary>
-    public List<string> CommonNames { get; set; }
+    public List<string> CommonNames { get; set; } = null!;
 
     /// <summary>
     /// Alternative names
     /// </summary>
-    public List<string> AltNames { get; set; }
+    public List<string> AltNames { get; set; } = null!;
 
     /// <summary>
     /// Timestamp before which the certificate is not valid
@@ -44,12 +44,12 @@ public class Cert
     /// <summary>
     /// Issuer subject
     /// </summary>
-    public string IssuerSubject { get; set; }
+    public string IssuerSubject { get; set; } = null!;
 
     /// <summary>
     /// Certificate signature algorithm
     /// </summary>
-    public string SigAlg { get; set; }
+    public string SigAlg { get; set; } = null!;
 
     /// <summary>
     /// A number that represents revocation information present in the certificate:
@@ -59,12 +59,12 @@ public class Cert
     /// <summary>
     /// CRL URIs extracted from the certificate
     /// </summary>
-    public List<string> CrlUrIs { get; set; }
+    public List<string> CrlUrIs { get; set; } = null!;
 
     /// <summary>
     /// OCSP URIs extracted from the certificate
     /// </summary>
-    public List<string> OcspUrIs { get; set; }
+    public List<string> OcspUrIs { get; set; } = null!;
 
     /// <summary>
     /// A number that describes the revocation status of the certificate:
@@ -114,22 +114,22 @@ public class Cert
     /// <summary>
     /// SHA1 hash of certificate
     /// </summary>
-    public string Sha1Hash { get; set; }
+    public string Sha1Hash { get; set; } = null!;
 
     /// <summary>
     /// SHA256 hash of certificate
     /// </summary>
-    public string Sha256Hash { get; set; }
+    public string Sha256Hash { get; set; } = null!;
 
     /// <summary>
     /// SHA256 hash of certificate for HPKP pinning
     /// </summary>
-    public string PinSha256 { get; set; }
+    public string PinSha256 { get; set; } = null!;
 
     /// <summary>
     /// Key algorithm.
     /// </summary>
-    public string KeyAlg { get; set; }
+    public string KeyAlg { get; set; } = null!;
 
     /// <summary>
     /// Key size, in bits appropriate for the key algorithm.
@@ -149,5 +149,5 @@ public class Cert
     /// <summary>
     /// PEM-encoded certificate
     /// </summary>
-    public string Raw { get; set; }
+    public string Raw { get; set; } = null!;
 }

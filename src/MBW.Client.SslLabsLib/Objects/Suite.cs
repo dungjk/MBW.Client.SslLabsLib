@@ -10,7 +10,7 @@ public class Suite
     /// <summary>
     /// Suite name (e.g., TLS_RSA_WITH_RC4_128_SHA)
     /// </summary>
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
 
     /// <summary>
     /// Suite strength (e.g., 128)
@@ -20,7 +20,7 @@ public class Suite
     /// <summary>
     /// Key exchange type (e.g., ECDH)
     /// </summary>
-    public string KxType { get; set; }
+    public string KxType { get; set; } = null!;
 
     /// <summary>
     /// Key exchange strength, in RSA-equivalent bits
@@ -55,7 +55,7 @@ public class Suite
     /// <summary>
     /// EC curve name
     /// </summary>
-    public string NamedGroupName { get; set; }
+    public string NamedGroupName { get; set; } = null!;
 
     /// <summary>
     /// Flag for suite insecure or weak. Not present if suite is strong or good

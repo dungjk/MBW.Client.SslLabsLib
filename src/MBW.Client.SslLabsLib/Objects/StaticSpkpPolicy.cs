@@ -26,25 +26,25 @@ public class StaticSpkpPolicy
     /// <summary>
     /// Gets or sets the report-uri value from the policy.
     /// </summary>
-    public string ReportUri { get; set; }
+    public string ReportUri { get; set; } = null!;
 
     /// <summary>
     /// List of all pins used by the policy
     /// </summary>
-    public List<HpkpPin> Pins { get; set; }
+    public List<HpkpPin> Pins { get; set; } = null!;
 
     /// <summary>
     /// List of pins that match the current configuration
     /// </summary>
-    public List<HpkpPin> MatchedPins { get; set; }
+    public List<HpkpPin> MatchedPins { get; set; } = null!;
 
     /// <summary>
     /// List of pins that match the current configuration
     /// </summary>
-    public List<HpkpPin> ForbiddenPins { get; set; }
+    public List<HpkpPin> ForbiddenPins { get; set; } = null!;
 
     /// <summary>
     /// List of forbidden pins that match the current configuration
     /// </summary>
-    public List<HpkpPin> MatchedForbiddenPins { get; set; }
+    public List<HpkpPin> MatchedForbiddenPins { get; set; } = null!;
 }

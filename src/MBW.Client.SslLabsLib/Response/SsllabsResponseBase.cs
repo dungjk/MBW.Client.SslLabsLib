@@ -2,5 +2,5 @@ namespace MBW.Client.SslLabsLib.Response;
 
 public class SsllabsResponseBase
 {
-    public ApiResponse Response { get; internal set; }
+    public ApiResponse Response { get; internal set; } = null!;
 }

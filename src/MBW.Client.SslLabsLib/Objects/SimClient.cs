@@ -10,17 +10,17 @@ public class SimClient
     /// <summary>
     /// Name of the client (e.g., "Chrome").
     /// </summary> 
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
 
     /// <summary>
     /// Name of the platform (e.g., "XP SP3").
     /// </summary>
-    public string Platform { get; set; }
+    public string Platform { get; set; } = null!;
 
     /// <summary>
     /// Version of the software being simulated (e.g., 49)
     /// </summary>
-    public string Version { get; set; }
+    public string Version { get; set; } = null!;
 
     /// <summary>
     /// True if the browser is considered representative of modern browsers, false otherwise. 

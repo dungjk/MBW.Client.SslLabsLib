@@ -16,26 +16,26 @@ public class EndpointDetails
     /// <summary>
     /// Server Certificate chains
     /// </summary>
-    public List<CertificateChain> CertChains { get; set; }
+    public List<CertificateChain> CertChains { get; set; } = null!;
 
     /// <summary>
     /// Supported protocols
     /// </summary>
-    public List<Protocol> Protocols { get; set; }
+    public List<Protocol> Protocols { get; set; } = null!;
 
     /// <summary>
     /// Supported cipher suites
     /// </summary>
-    public List<Suites> Suites { get; set; }
+    public List<Suites> Suites { get; set; } = null!;
 
     /// <summary>
     /// Cipher suites observed only with client that does not support Server Name Indication (SNI).
     /// </summary>
-    public Suites NoSniSuites { get; set; }
+    public Suites NoSniSuites { get; set; } = null!;
 
     /// <summary>
     /// </summary>
-    public NamedGroups NamedGroups { get; set; }
+    public NamedGroups NamedGroups { get; set; } = null!;
 
     /// <summary>
     /// Contents of the HTTP Server response header when known. 
@@ -43,7 +43,7 @@ public class EndpointDetails
     /// 1) the HTTP request failed (check httpStatusCode)
     /// 2) there was no Server response header returned.
     /// </summary>
-    public string ServerSignature { get; set; }
+    public string ServerSignature { get; set; } = null!;
 
     /// <summary>
     /// True if this endpoint is reachable via a hostname with the www prefix
@@ -83,7 +83,7 @@ public class EndpointDetails
     /// <summary>
     /// List of supported protocols, separated by spaces
     /// </summary>
-    public string NpnProtocols { get; set; }
+    public string NpnProtocols { get; set; } = null!;
 
     /// <summary>
     /// True if the server supports ALPN
@@ -93,7 +93,7 @@ public class EndpointDetails
     /// <summary>
     /// List of supported ALPN protocols, separated by spaces
     /// </summary>
-    public string AlpnProtocols { get; set; }
+    public string AlpnProtocols { get; set; } = null!;
 
     /// <summary>
     /// Indicates support for Session Tickets
@@ -174,7 +174,7 @@ public class EndpointDetails
     /// <summary>
     /// Client simulation details
     /// </summary>
-    public SimDetails Sims { get; set; }
+    public SimDetails Sims { get; set; } = null!;
 
     /// <summary>
     /// True if the server is vulnerable to the Heartbleed attack.
@@ -285,37 +285,37 @@ public class EndpointDetails
     /// <summary>
     /// Server's HSTS policy. Experimental.
     /// </summary>
-    public HstsPolicy HstsPolicy { get; set; }
+    public HstsPolicy HstsPolicy { get; set; } = null!;
 
     /// <summary>
     /// Information about preloaded HSTS policies.
     /// </summary>
-    public List<HstsPreload> HstsPreloads { get; set; }
+    public List<HstsPreload> HstsPreloads { get; set; } = null!;
 
     /// <summary>
     /// Server's HPKP policy. Experimental.
     /// </summary>
-    public HpkpPolicy HpkpPolicy { get; set; }
+    public HpkpPolicy HpkpPolicy { get; set; } = null!;
 
     /// <summary>
     /// Server's HPKP RO (Report Only) policy. Experimental.
     /// </summary>
-    public HpkpPolicy HpkpRoPolicy { get; set; }
+    public HpkpPolicy HpkpRoPolicy { get; set; } = null!;
 
     /// <summary>
     /// Server's SPKP policy.
     /// </summary>
-    public StaticSpkpPolicy StaticPkpPolicy { get; set; }
+    public StaticSpkpPolicy StaticPkpPolicy { get; set; } = null!;
 
     /// <summary>
     /// An array of HttpTransaction objects.
     /// </summary>
-    public List<HttpTransaction> HttpTransactions { get; set; }
+    public List<HttpTransaction> HttpTransactions { get; set; } = null!;
 
     /// <summary>
     /// List of drown hosts. Experimental.
     /// </summary>
-    public List<DrownHosts> DrownHosts { get; set; }
+    public List<DrownHosts> DrownHosts { get; set; } = null!;
 
     /// <summary>
     /// True if error occurred in drown test.

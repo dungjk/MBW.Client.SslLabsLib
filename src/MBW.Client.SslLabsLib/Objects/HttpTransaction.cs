@@ -7,7 +7,7 @@ public class HttpTransaction
     /// <summary>
     /// Request URL
     /// </summary>
-    public string RequestUrl { get; set; }
+    public string RequestUrl { get; set; } = null!;
 
     /// <summary>
     /// Response status code
@@ -17,27 +17,27 @@ public class HttpTransaction
     /// <summary>
     /// The entire request line as a single field
     /// </summary>
-    public string RequestLine { get; set; }
+    public string RequestLine { get; set; } = null!;
 
     /// <summary>
     /// An array of request HTTP headers
     /// </summary>
-    public List<string> RequestHeaders { get; set; }
+    public List<string> RequestHeaders { get; set; } = null!;
 
     /// <summary>
     /// The entire response line as a single field
     /// </summary>
-    public string ResponseLine { get; set; }
+    public string ResponseLine { get; set; } = null!;
 
     /// <summary>
     /// All response headers as a single field (useful if the headers are malformed)
     /// </summary>
-    public List<string> ResponseHeadersRaw { get; set; }
+    public List<string> ResponseHeadersRaw { get; set; } = null!;
 
     /// <summary>
     /// An array of response HTTP headers,
     /// </summary>
-    public List<ResponseHeader> ResponseHeaders { get; set; }
+    public List<ResponseHeader> ResponseHeaders { get; set; } = null!;
 
     /// <summary>
     /// True if the server crashes when inspected by SSL Labs (in which case the full test is refused)

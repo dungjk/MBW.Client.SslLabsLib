@@ -8,12 +8,12 @@ public class HstsPreload
     /// <summary>
     /// Source name
     /// </summary>
-    public string Source { get; set; }
+    public string Source { get; set; } = null!;
 
     /// <summary>
     /// Hostname of this preload
     /// </summary>
-    public string Hostname { get; set; }
+    public string Hostname { get; set; } = null!;
 
     /// <summary>
     /// Preload status

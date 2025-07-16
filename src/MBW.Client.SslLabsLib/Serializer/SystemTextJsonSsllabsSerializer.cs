@@ -53,7 +53,7 @@ public class SystemTextJsonSsllabsSerializer : ISsllabsSerializer
         }
         catch (Exception e)
         {
-            if (!(source is MemoryStream asMemoryStream))
+            if (source is not MemoryStream asMemoryStream)
                 throw;
 
             string tmp = Encoding.UTF8.GetString(asMemoryStream.ToArray());
